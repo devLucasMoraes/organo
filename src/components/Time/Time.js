@@ -10,12 +10,12 @@ const Time = (props) => {
                 {props.colaboradores
                     .map(colaborador => {
                         const colaboradorJSXelement = <Colaborador 
-                                                key={colaborador.nome} 
-                                                nome={colaborador.nome} 
-                                                cargo={colaborador.cargo} 
-                                                img={colaborador.imagem} 
-                                                corPrimaria={props.corPrimaria}>
-                                            </Colaborador>;
+                                                        key={colaborador.nome} 
+                                                        nome={colaborador.nome} 
+                                                        cargo={colaborador.cargo} 
+                                                        img={colaborador.imagem} 
+                                                        corPrimaria={props.corPrimaria}>
+                                                    </Colaborador>;
                         //console.log(colaboradorJSXelement)
                         return colaboradorJSXelement
                     })}
