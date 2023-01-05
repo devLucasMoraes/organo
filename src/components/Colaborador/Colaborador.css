@@ -42,4 +42,7 @@
     position: absolute;
     right: -10px;
     top: -10px;
+    cursor: pointer;
+    font-size: 32px;
+    color: #aa132c;
 }
