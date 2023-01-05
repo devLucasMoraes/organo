@@ -14,7 +14,8 @@ const Time = (props) => {
                                                         nome={colaborador.nome} 
                                                         cargo={colaborador.cargo} 
                                                         img={colaborador.imagem} 
-                                                        corPrimaria={props.corPrimaria}>
+                                                        corPrimaria={props.corPrimaria}
+                                                        aoDeletar={props.aoDeletar}>
                                                     </Colaborador>;
                         //console.log(colaboradorJSXelement)
                         return colaboradorJSXelement

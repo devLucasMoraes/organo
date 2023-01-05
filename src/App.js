@@ -198,17 +198,24 @@ function App() {
     setColaboradores([...colaboradores, colaborador])
   }
 
+  const deletarColaborador = () => {
+    console.log('deletando colaborador')
+  }
+
   return (
     <div className="App">
       <Banner></Banner>
       <Formulario times={times.map(time => time.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorCadastrado(colaborador)}></Formulario>
-      {times.map(time => <Time 
-        key={time.nome} 
-        nome={time.nome} 
-        corPrimaria={time.corPrimaria} 
-        corSecundaria={time.corSecundaria}
-        colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}>  
-      </Time>)}
+      {times.map(time => 
+        <Time 
+          key={time.nome} 
+          nome={time.nome} 
+          corPrimaria={time.corPrimaria} 
+          corSecundaria={time.corSecundaria}
+          colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+          aoDeletar={deletarColaborador}>  
+        </Time>
+      )}
       <Rodape></Rodape>
     </div>
   );
