@@ -9,14 +9,15 @@ const Time = (props) => {
             <div className='colaboradores'>
                 {props.colaboradores
                     .map(colaborador => {
-                        //console.log(<Colaborador key={colaborador.nome} nome={colaborador.nome} cargo={colaborador.cargo} img={colaborador.imagem} corPrimaria={props.corPrimaria}></Colaborador>)
-                        return <Colaborador 
-                        key={colaborador.nome}
-                        nome={colaborador.nome} 
-                        cargo={colaborador.cargo} 
-                        img={colaborador.imagem}
-                        corPrimaria={props.corPrimaria}>
-                    </Colaborador>
+                        const colaboradorJSXelement = <Colaborador 
+                                                key={colaborador.nome} 
+                                                nome={colaborador.nome} 
+                                                cargo={colaborador.cargo} 
+                                                img={colaborador.imagem} 
+                                                corPrimaria={props.corPrimaria}>
+                                            </Colaborador>;
+                        //console.log(colaboradorJSXelement)
+                        return colaboradorJSXelement
                     })}
             </div>
         </section>
