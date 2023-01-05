@@ -10,7 +10,8 @@ const Time = (props) => {
                     .map(colaborador => <Colaborador 
                                             nome={colaborador.nome} 
                                             cargo={colaborador.cargo} 
-                                            img={colaborador.imagem}>
+                                            img={colaborador.imagem}
+                                            corPrimaria={props.corPrimaria}>
                                         </Colaborador>)}
             </div>
         </section>
