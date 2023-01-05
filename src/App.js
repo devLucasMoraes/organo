@@ -9,38 +9,31 @@ function App() {
   const [times, setTimes] = useState([
     {
       nome: 'Programação',
-      corPrimaria: '#57c278',
-      corSecundaria: '#d9f7e9'
+      cor: '#57c278',
     },
     {
       nome: 'Front-end',
-      corPrimaria: '#82cffa',
-      corSecundaria: '#e8f8ff'
+      cor: '#82cffa',
     },
     {
       nome: 'Data Science',
-      corPrimaria: '#a6d157',
-      corSecundaria: '#f0f8e2'
+      cor: '#a6d157',
     },
     {
       nome: 'Devops',
-      corPrimaria: '#e06b69',
-      corSecundaria: '#fde7e8'
+      cor: '#e06b69',
     },
     {
       nome: 'UX e Desing',
-      corPrimaria: '#db6ebf',
-      corSecundaria: '#fae9f5'
+      cor: '#db6ebf',
     },
     {
       nome: 'Mobile',
-      corPrimaria: '#ffba05',
-      corSecundaria: '#fff5d9'
+      cor: '#ffba05',
     },
     {
       nome: 'Inovação e Gestão',
-      corPrimaria: '#ff8a29',
-      corSecundaria: '#ffeedf'
+      cor: '#ff8a29',
     }
   ])
 
@@ -205,7 +198,7 @@ function App() {
   const mudarCorDoTime = (cor, nome) => {
     setTimes(times.map(time => {
       if(time.nome === nome){
-        time.corPrimaria = cor
+        time.cor = cor
       }
       return time
     }))
@@ -219,9 +212,7 @@ function App() {
         <Time 
           key={time.nome}
           aoMudarCor={mudarCorDoTime}
-          nome={time.nome} 
-          corPrimaria={time.corPrimaria} 
-          corSecundaria={time.corSecundaria}
+          time={time}
           colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
           aoDeletar={deletarColaborador}>  
         </Time>

@@ -6,7 +6,7 @@ const Colaborador = (props) => {
     return (
         <div className='colaborador'>
             <AiFillCloseCircle className='deletar' onClick={props.aoDeletar}></AiFillCloseCircle>
-            <div className='cabecalho' style={{ backgroundColor: props.corPrimaria}}>
+            <div className='cabecalho' style={{ backgroundColor: props.cor}}>
                 <img src={props.img} alt='Lucas Moraes'></img>
             </div>
             <div className='rodape'>
