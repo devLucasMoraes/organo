@@ -46,3 +46,12 @@
     font-size: 32px;
     color: #aa132c;
 }
+
+.colaborador .favoritar {
+    margin-top: 24px;
+}
+
+.colaborador .favoritar svg {
+    cursor: pointer;
+    font-size: 32px;
+}

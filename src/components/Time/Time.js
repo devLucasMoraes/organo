@@ -16,7 +16,8 @@ const Time = (props) => {
                                                         key={colaborador.nome}
                                                         colaborador={colaborador} 
                                                         cor={props.time.cor}
-                                                        aoDeletar={props.aoDeletar}>
+                                                        aoDeletar={props.aoDeletar}
+                                                        aoFavoritar={props.aoFavoritar}>
                                                     </Colaborador>;
                         //console.log(colaboradorJSXelement)
                         return colaboradorJSXelement
