@@ -13,10 +13,8 @@ const Time = (props) => {
                 {props.colaboradores
                     .map(colaborador => {
                         const colaboradorJSXelement = <Colaborador 
-                                                        key={colaborador.nome} 
-                                                        nome={colaborador.nome} 
-                                                        cargo={colaborador.cargo} 
-                                                        img={colaborador.imagem} 
+                                                        key={colaborador.nome}
+                                                        colaborador={colaborador} 
                                                         cor={props.time.cor}
                                                         aoDeletar={props.aoDeletar}>
                                                     </Colaborador>;
